@@ -136,3 +136,113 @@ WARNING:langchain_google_genai.chat_models:Retrying langchain_google_genai.chat_
 WARNING:langchain_google_genai.chat_models:Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 Resource has been exhausted (e.g. check quota)..
 WARNING:langchain_google_genai.chat_models:Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 Resource has been exhausted (e.g. check quota)..
 WARNING:langchain_google_genai.chat_models:Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 Resource has been exhausted (e.g. check quota)..
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BF3BAA56A0>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")': /batch/
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BF3BAA5940>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")': /batch/
+INFO:backoff:Backing off send_request(...) for 0.6s (requests.exceptions.ConnectionError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BF3BAA5AF0>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")))
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BF3BAA41D0>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")': /batch/
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BF3BAA5C10>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")': /batch/
+INFO:backoff:Backing off send_request(...) for 1.7s (requests.exceptions.ConnectionError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BF3BAA5DC0>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")))
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BF3BAA61E0>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")': /batch/
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BF3BAA62A0>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")': /batch/
+INFO:backoff:Backing off send_request(...) for 2.3s (requests.exceptions.ConnectionError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BF3BAA6450>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")))
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BF3BAA6870>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")': /batch/
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BF3BAA6990>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")': /batch/
+ERROR:backoff:Giving up send_request(...) after 4 tries (requests.exceptions.ConnectionError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BF3BAA6BA0>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")))
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000197FF5EC320>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")': /batch/
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000197FF625F70>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")': /batch/
+INFO:backoff:Backing off send_request(...) for 0.3s (requests.exceptions.ConnectionError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000197FF625730>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")))
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000197FF626150>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")': /batch/
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000197FF626210>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")': /batch/
+INFO:backoff:Backing off send_request(...) for 1.6s (requests.exceptions.ConnectionError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000197FF6263C0>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")))
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000197FF626840>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")': /batch/
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000197FF626900>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")': /batch/
+INFO:backoff:Backing off send_request(...) for 0.4s (requests.exceptions.ConnectionError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000197FF626AB0>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")))
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000197FF626ED0>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")': /batch/
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000197FF626FF0>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")': /batch/
+ERROR:backoff:Giving up send_request(...) after 4 tries (requests.exceptions.ConnectionError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000197FF627200>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")))
+INFO:main:Received chat request - Session: 8e379747-edd6-4770-a82a-e5e9c6694bac, Model: models/gemini-1.5-pro
+INFO:main:Initializing RAG chain for session 8e379747-edd6-4770-a82a-e5e9c6694bac
+INFO:langchain_utils:Successfully tested Gemini model connection
+INFO:langchain_utils:Successfully created RAG chain for session 8e379747-edd6-4770-a82a-e5e9c6694bac
+INFO:main:Processing question for session 8e379747-edd6-4770-a82a-e5e9c6694bac: when was GreenGrow Innovations founded?...
+ERROR:main:Error processing question for session 8e379747-edd6-4770-a82a-e5e9c6694bac: Missing some input keys: {'input'}
+ERROR:main:Unexpected error in chat endpoint: 500: Missing some input keys: {'input'}
+INFO:main:Received chat request - Session: a05ebfa8-b210-4af6-a9ad-e049e92ebbe8, Model: models/gemini-1.5-pro
+INFO:main:Initializing RAG chain for session a05ebfa8-b210-4af6-a9ad-e049e92ebbe8
+INFO:langchain_utils:Successfully tested Gemini model connection
+INFO:langchain_utils:Successfully created RAG chain for session a05ebfa8-b210-4af6-a9ad-e049e92ebbe8
+INFO:main:Processing question for session a05ebfa8-b210-4af6-a9ad-e049e92ebbe8: when was GreenGrow Innovations founded?...
+ERROR:main:Error processing question for session a05ebfa8-b210-4af6-a9ad-e049e92ebbe8: Missing some input keys: {'question'}
+ERROR:main:Unexpected error in chat endpoint: 500: Missing some input keys: {'question'}
+2025-04-04 20:18:35,962 - main - INFO - Received chat request - Session: b1d237f4-0afe-4b7e-baa8-7d17318e6d94, Model: models/gemini-1.5-pro
+2025-04-04 20:18:36,963 - main - INFO - Initializing RAG chain for session b1d237f4-0afe-4b7e-baa8-7d17318e6d94
+2025-04-04 20:18:38,135 - langchain_utils - INFO - Successfully tested Gemini model connection
+2025-04-04 20:18:38,136 - langchain_utils - ERROR - Failed to create conversation chain: 2 validation errors for ConversationalRetrievalChain
+map_reduce_kwargs
+  Extra inputs are not permitted [type=extra_forbidden, input_value={'input_key': 'input', 'output_key': 'answer'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+combine_docs_chain_kwargs
+  Extra inputs are not permitted [type=extra_forbidden, input_value={'input_key': 'input', 'output_key': 'answer'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-04-04 20:18:38,136 - langchain_utils - ERROR - RAG-specific error: Failed to create conversation chain: 2 validation errors for ConversationalRetrievalChain
+map_reduce_kwargs
+  Extra inputs are not permitted [type=extra_forbidden, input_value={'input_key': 'input', 'output_key': 'answer'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+combine_docs_chain_kwargs
+  Extra inputs are not permitted [type=extra_forbidden, input_value={'input_key': 'input', 'output_key': 'answer'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-04-04 20:18:43,549 - langchain_utils - INFO - Successfully tested Gemini model connection
+2025-04-04 20:18:43,549 - langchain_utils - ERROR - Failed to create conversation chain: 2 validation errors for ConversationalRetrievalChain
+map_reduce_kwargs
+  Extra inputs are not permitted [type=extra_forbidden, input_value={'input_key': 'input', 'output_key': 'answer'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+combine_docs_chain_kwargs
+  Extra inputs are not permitted [type=extra_forbidden, input_value={'input_key': 'input', 'output_key': 'answer'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-04-04 20:18:43,549 - langchain_utils - ERROR - RAG-specific error: Failed to create conversation chain: 2 validation errors for ConversationalRetrievalChain
+map_reduce_kwargs
+  Extra inputs are not permitted [type=extra_forbidden, input_value={'input_key': 'input', 'output_key': 'answer'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+combine_docs_chain_kwargs
+  Extra inputs are not permitted [type=extra_forbidden, input_value={'input_key': 'input', 'output_key': 'answer'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-04-04 20:18:48,998 - langchain_utils - INFO - Successfully tested Gemini model connection
+2025-04-04 20:18:48,999 - langchain_utils - ERROR - Failed to create conversation chain: 2 validation errors for ConversationalRetrievalChain
+map_reduce_kwargs
+  Extra inputs are not permitted [type=extra_forbidden, input_value={'input_key': 'input', 'output_key': 'answer'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+combine_docs_chain_kwargs
+  Extra inputs are not permitted [type=extra_forbidden, input_value={'input_key': 'input', 'output_key': 'answer'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-04-04 20:18:48,999 - langchain_utils - ERROR - RAG-specific error: Failed to create conversation chain: 2 validation errors for ConversationalRetrievalChain
+map_reduce_kwargs
+  Extra inputs are not permitted [type=extra_forbidden, input_value={'input_key': 'input', 'output_key': 'answer'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+combine_docs_chain_kwargs
+  Extra inputs are not permitted [type=extra_forbidden, input_value={'input_key': 'input', 'output_key': 'answer'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-04-04 20:18:48,999 - main - ERROR - Unexpected error in chat endpoint: RetryError[<Future at 0x2a9734f01a0 state=finished raised RAGException>]
+2025-04-04 20:30:01,849 - main - INFO - Received chat request - Session: 7e5366cd-d4e6-45f2-b9a4-b5d7990175bc, Model: models/gemini-1.5-pro
+2025-04-04 20:30:02,850 - main - INFO - Initializing RAG chain for session 7e5366cd-d4e6-45f2-b9a4-b5d7990175bc
+2025-04-04 20:30:02,854 - main - INFO - Processing question for session 7e5366cd-d4e6-45f2-b9a4-b5d7990175bc: when was GreenGrow Innovations founded?...
+2025-04-04 20:30:05,777 - main - INFO - Generated response for session 7e5366cd-d4e6-45f2-b9a4-b5d7990175bc - Length: 42
+2025-04-04 20:30:05,777 - main - INFO - Logging interaction to database for session 7e5366cd-d4e6-45f2-b9a4-b5d7990175bc
+2025-04-04 20:30:18,534 - main - INFO - Received chat request - Session: 7e5366cd-d4e6-45f2-b9a4-b5d7990175bc, Model: models/gemini-1.5-pro
+2025-04-04 20:30:19,535 - main - INFO - Initializing RAG chain for session 7e5366cd-d4e6-45f2-b9a4-b5d7990175bc
+2025-04-04 20:30:19,537 - main - INFO - Processing question for session 7e5366cd-d4e6-45f2-b9a4-b5d7990175bc: where it is headquartered...
+2025-04-04 20:30:23,211 - main - INFO - Generated response for session 7e5366cd-d4e6-45f2-b9a4-b5d7990175bc - Length: 160
+2025-04-04 20:30:23,211 - main - INFO - Logging interaction to database for session 7e5366cd-d4e6-45f2-b9a4-b5d7990175bc
+2025-04-04 20:30:50,574 - main - INFO - Received chat request - Session: 7e5366cd-d4e6-45f2-b9a4-b5d7990175bc, Model: models/gemini-1.5-pro
+2025-04-04 20:30:51,576 - main - INFO - Initializing RAG chain for session 7e5366cd-d4e6-45f2-b9a4-b5d7990175bc
+2025-04-04 20:30:51,579 - main - INFO - Processing question for session 7e5366cd-d4e6-45f2-b9a4-b5d7990175bc: tell me more about the company in bulleted points...
+2025-04-04 20:30:53,037 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 7
+}
+].
+2025-04-04 20:30:55,331 - main - WARNING - Rate limit hit for session 7e5366cd-d4e6-45f2-b9a4-b5d7990175bc

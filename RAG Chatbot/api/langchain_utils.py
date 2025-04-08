@@ -23,9 +23,6 @@ retriever = vectorstore.as_retriever(search_kwargs={"k": 2})
 
 output_parser = StrOutputParser()
 
-
-
-
 # Set up prompts and chains
 contextualize_q_system_prompt = (
     "Given a chat history and the latest user question "
@@ -41,16 +38,12 @@ contextualize_q_prompt = ChatPromptTemplate.from_messages([
     ("human", "{input}"),
 ])
 
-
-
 qa_prompt = ChatPromptTemplate.from_messages([
     ("system", "You are a helpful AI assistant. Use the following context to answer the user's question."),
     ("system", "Context: {context}"),
     MessagesPlaceholder(variable_name="chat_history"),
     ("human", "{input}")
 ])
-
-
 
 @retry(
     stop=stop_after_attempt(3),
@@ -86,3 +79,14 @@ def get_rag_chain(session_id: str, model_name="models/gemini-1.5-pro"):
     except Exception as e:
         print(f"Error in get_rag_chain: {str(e)}")
         raise
+
+def clear_session_memory(session_id: str) -> bool:
+    """Clear the conversation memory for a specific session"""
+    try:
+        if session_id in session_memories:
+            del session_memories[session_id]
+            return True
+        return False
+    except Exception as e:
+        print(f"Error clearing session memory: {str(e)}")
+        return False

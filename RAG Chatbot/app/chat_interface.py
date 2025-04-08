@@ -1,33 +1,30 @@
 import streamlit as st
-from api_utils import get_api_response
+from api_utils import chat_with_bot
 
-def display_chat_interface():
-    # Chat interface
+def display_chat_interface(model: str, session_id: str):
+    # Display chat messages
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
-    if prompt := st.chat_input("Query:"):
+    # Chat input
+    if prompt := st.chat_input("What would you like to know?"):
         st.session_state.messages.append({"role": "user", "content": prompt})
         with st.chat_message("user"):
             st.markdown(prompt)
 
-        with st.spinner("Generating response..."):
-            response = get_api_response(prompt, st.session_state.session_id, st.session_state.model)
-            
-            if response:
-                st.session_state.session_id = response.get('session_id')
-                st.session_state.messages.append({"role": "assistant", "content": response['answer']})
-                
-                with st.chat_message("assistant"):
-                    st.markdown(response['answer'])
-                    
-                    with st.expander("Details"):
-                        st.subheader("Generated Answer")
-                        st.code(response['answer'])
-                        st.subheader("Model Used")
-                        st.code(response['model'])
-                        st.subheader("Session ID")
-                        st.code(response['session_id'])
-            else:
-                st.error("Failed to get a response from the API. Please try again.")
+        with st.chat_message("assistant"):
+            with st.spinner('Thinking...'):
+                try:
+                    response = chat_with_bot(
+                        prompt, 
+                        model,
+                        session_id=session_id
+                    )
+                    if "429" in response or "quota" in response.lower():
+                        st.warning("The API is currently rate limited. Please wait a few seconds and try again.")
+                    else:
+                        st.markdown(response)
+                        st.session_state.messages.append({"role": "assistant", "content": response})
+                except Exception as e:
+                    st.error(f"An error occurred: {str(e)}")
